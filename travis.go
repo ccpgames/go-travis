@@ -21,7 +21,10 @@ import (
 )
 
 const (
-	defaultBaseURL = "https://api.travis-ci.org/"
+	TRAVIS_API_DEFAULT_URL = "https://api.travis-ci.org/"
+	TRAVIS_API_PRO_URL = "https://api.travis-ci.com/"
+
+	defaultBaseURL = TRAVIS_API_DEFAULT_URL
 	userAgent      = "go-travis/" + version
 
 	defaultContentType = "application/json"
